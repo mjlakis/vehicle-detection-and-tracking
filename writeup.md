@@ -79,6 +79,7 @@ Consider the following test image.
 ![test1][test6.jpg]
 
 After applying a window search, the following hot windows are detected:
+
 ![test2][hot.png]
 
 ---
