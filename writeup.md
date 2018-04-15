@@ -76,7 +76,7 @@ I chose four window sizes: 48, 64, 92, 128. At each step of the search, the wind
 
 Consider the following test image. 
 
-![test1](test6.jpg)
+![test1](original.png)
 
 After applying a window search, the following hot windows are detected:
 
