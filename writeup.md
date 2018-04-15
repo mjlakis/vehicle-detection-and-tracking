@@ -95,7 +95,7 @@ After finding the hot windows; i.e. the windows were cars are detected as in the
 
 ### Here is a heatmap with filtered false positives:
 
-![alt text][filtered_hot.png]
+![alt text](filtered_hot.png)
 
 ### Here is the final labels on the original image:
 ![alt text](filter_result.png)
