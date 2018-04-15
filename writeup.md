@@ -48,11 +48,7 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
-I tried various combinations of parameters and...
-
-#### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
-
-I trained a linear SVM using...  
+I tried various combinations of parameters of colorspace, number of orientations, and number of pixels per cell. All the combinations were used in a SVM classifier and showed high accuracy above 0.95 on the validation tests. In general, as I increased the number of orientations, the accuracy increased. However, the number of features significantly increased. This could cause overfitting, therefore I limited the number of orientations to 16 (and I fixed it at this number). Also, decreasing the number of pixels per cell significantly increased the number of HOG features, so I set the lower bound of at 8 (which was also showed very high accuracy. The color space selected is YCrCb, with all layers used. Using this color space, the number of false positives was low and easily filtered. Here is a summary of the paremeters used:
 
 | Variable         		|     Description	        					| 
 |:---------------------:|:-------------------------------:| 
@@ -62,6 +58,10 @@ I trained a linear SVM using...
 | Cell per block		| 2      			| 
 | Hog channels		|  All       			|  
 
+
+#### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
+
+I used a SVM classifier trained on the dataset provided with the project. The feature vectors are extracted as described above (HOG features only). The featuers are normalized. Twenty percent of the dataset is used for validation. The testing is done on the project video. The training is done in `train.py` in lines 175 and 178. 
 This results in a 0.9905 validation accuracy for the classifier.
 
 
