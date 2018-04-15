@@ -53,12 +53,22 @@ I tried various combinations of parameters and...
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
 I trained a linear SVM using...
+| Variable         		|     Description	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| Color space		| YCrCb       			|  
+| Orientations		| 16       			|  
+| Pixels per cell		| 8      			|  
+| Cell per block		| 2      			| 
+| Hog channels		|  All       			|  
+
+This results in a 0.9905 validation accuracy for the classifier.
+
 
 ### Sliding Window Search
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+
 
 ![alt text][image3]
 
