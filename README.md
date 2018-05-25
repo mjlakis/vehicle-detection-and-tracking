@@ -2,7 +2,7 @@
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 
-In this project, my goal is to write a software pipeline to detect vehicles in a video. Main parts of the code are in [trainer.py](https://github.com/TrustLak/vehicle-detection-and-tracking/blob/master/train.py)  
+In this project, my goal is to write a software pipeline to detect vehicles in a video. You can find a detailed report on the my implementation of this project in [`writeup.md`](https://github.com/TrustLak/vehicle-detection-and-tracking/blob/master/writeup.md) in this reporsitory. Main parts of the code are in [trainer.py](https://github.com/TrustLak/vehicle-detection-and-tracking/blob/master/train.py)  
 Test results are shown in `full_video_labeled.mp4` in this repository. You can also watch it on [youtube](full_video_labeled.mp4).
 
 The Project
